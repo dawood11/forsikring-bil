@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<title>forsikring-bil</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/index.css">
 	</head>
 	<body>
 		<h1>Kjøp Bilforsikring</h1>
 		<p>Det er fire forskjellige forsikringer å velge mellom. Ansvarsforsikring er lovpålagt om kjøretøyet er registrert og skal brukes på veien. I tillegg kan du utvide forsikringen avhengig av hvor gammel bilen din er og hvordan du bruker den.</p>
-		
-		
+
+
 
 		<form>
 			Bilens registreringsnummer
@@ -16,13 +17,13 @@
 			Din bonus
 			<input type="text" name="bonus" placeholder="Placeholder">
 			
-			<span>Hjelpetekst står her</span>
+			<span >Hjelpetekst står her</span>
 			
 			Fødselsnummer
 			<input type="number" name="fNr" placeholder="11 siffer">
 			
 			
-			<div>
+			<div class="row">
 				<div>
 					Fornavn
 					
@@ -38,10 +39,9 @@
 			Epost
 			<input type="text" name="epost" placeholder="e.g. AB 12345">
 			
-			<span>Skriv inn en gyldig epostaddresse</span>
+			<span style="color:red;">Skriv inn en gyldig epostaddresse</span>
 			
-
-			<button type="submit" value="Beregn pris">Beregn pris</button>
+			<button type="submit" class="submit-btn" value="Beregn pris">Beregn pris</button>
 			<button type="cancel" >Avbryt</button>
 		</form>
 	</body>
