@@ -15,7 +15,7 @@ const rules = {
         pattern: /[a-zA-Z]{2,}/,
         message: 'Etternavn må være på minst 2 bokstaver. Kun bokstaver.'
     },
-    email: {
+    epost: {
         pattern: /[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,}/,
         message: 'Skriv inn en gyldig epostaddresse'
     },
