@@ -8,39 +8,40 @@
 		<h1>Kjøp Bilforsikring</h1>
 		<p>Det er fire forskjellige forsikringer å velge mellom. Ansvarsforsikring er lovpålagt om kjøretøyet er registrert og skal brukes på veien. I tillegg kan du utvide forsikringen avhengig av hvor gammel bilen din er og hvordan du bruker den.</p>
 
-
-
 		<form>
-			Bilens registreringsnummer
-			<input type="text" name="regNr" placeholder="e.g. AB 12345">
-			
-			Din bonus
-			<input type="text" name="bonus" placeholder="Placeholder">
-			
-			<span >Hjelpetekst står her</span>
-			
-			Fødselsnummer
-			<input type="number" name="fNr" placeholder="11 siffer">
-			
+			<label>Bilens registreringsnummer<br></label>
+			<input type="text" id="regNr" placeholder="e.g. AB 12345"><br>
+			<br><br>
+			<label>Din bonus</label><br>
+			<select id="bonus" id="bonus">
+				<option value="25%">25%</option>
+				<option value="50%">50%</option>
+				<option value="75%">75%</option>
+			  </select>
+			<br>
+			<span class="help-text">Hjelpetekst står her</span>
+			<br><br>
+			<label>Fødselsnummer</label><br>
+			<input type="text" id="fNr" placeholder="11 siffer">
+			<br>
 			
 			<div class="row">
-				<div>
-					Fornavn
-					
-					<input type="text" name="fornavn" placeholder="Placeholder">
+				<div class="column">
+					<label>Fornavn</label>
+					<br>
+					<input type="text" id="fornavn" placeholder="Placeholder">
 				</div>
-				<div>
-					Etternavn
-					
-					<input type="text" name="etternavn" placeholder="Placeholder">
+				<div class="column">
+					<label>Etternavn</label>
+					<br>
+					<input type="text" id="etternavn" placeholder="Placeholder">
 				</div>
 			</div>
-			
-			Epost
-			<input type="text" name="epost" placeholder="e.g. AB 12345">
-			
-			<span style="color:red;">Skriv inn en gyldig epostaddresse</span>
-			
+			<br>
+			<label>Epost</label><br>
+			<input type="email" id="epost" placeholder="Placeholder">
+			<br><br>
+
 			<button type="submit" class="submit-btn" value="Beregn pris">Beregn pris</button>
 			<button type="cancel" >Avbryt</button>
 		</form>
