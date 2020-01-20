@@ -17,7 +17,7 @@
 			<input type="text" id="regNr" placeholder="e.g. AB 12345" minlength="6" maxlength="7" onblur="validate(this)">
 			<br><br>
 			<label>Din bonus</label><br>
-			<select id="bonus" id="bonus">
+			<select id="bonus" id="bonus" required>
 				<option value="25%">25%</option>
 				<option value="50%">50%</option>
 				<option value="75%">75%</option>
@@ -26,7 +26,7 @@
 			<span class="help-text">Hjelpetekst står her</span>
 			<br><br>
 			<label>Fødselsnummer</label><br>
-			<input type="text" id="fNr" placeholder="11 siffer" minlength="11" maxlength="11" onblur="validate(this)">
+			<input type="number" id="fNr" placeholder="11 siffer" minlength="11" maxlength="11" onblur="validate(this)">
 			<br>
 			
 			<div class="row">
