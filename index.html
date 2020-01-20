@@ -3,6 +3,7 @@
 	<head>
 		<title>forsikring-bil</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+		<script src="assets/js/index.js"></script>
 	</head>
 	<body>
 		<h1>Kjøp Bilforsikring</h1>
@@ -10,7 +11,7 @@
 
 		<form>
 			<label>Bilens registreringsnummer<br></label>
-			<input type="text" id="regNr" placeholder="e.g. AB 12345"><br>
+			<input type="text" id="regNr" placeholder="e.g. AB 12345" minlength="6" maxlength="7" onblur="validate(this)">
 			<br><br>
 			<label>Din bonus</label><br>
 			<select id="bonus" id="bonus">
@@ -22,24 +23,24 @@
 			<span class="help-text">Hjelpetekst står her</span>
 			<br><br>
 			<label>Fødselsnummer</label><br>
-			<input type="text" id="fNr" placeholder="11 siffer">
+			<input type="text" id="fNr" placeholder="11 siffer" minlength="11" maxlength="11" onblur="validate(this)">
 			<br>
 			
 			<div class="row">
 				<div class="column">
 					<label>Fornavn</label>
 					<br>
-					<input type="text" id="fornavn" placeholder="Placeholder">
+					<input type="text" id="fornavn" placeholder="Placeholder" minlength="2" onblur="validate(this)">
 				</div>
 				<div class="column">
 					<label>Etternavn</label>
 					<br>
-					<input type="text" id="etternavn" placeholder="Placeholder">
+					<input type="text" id="etternavn" placeholder="Placeholder" minlength="2" onblur="validate(this)">
 				</div>
 			</div>
 			<br>
 			<label>Epost</label><br>
-			<input type="email" id="epost" placeholder="Placeholder">
+			<input type="email" id="epost" placeholder="Placeholder" minlength="6" onblur="validate(this)">
 			<br><br>
 
 			<button type="submit" class="submit-btn" value="Beregn pris">Beregn pris</button>
