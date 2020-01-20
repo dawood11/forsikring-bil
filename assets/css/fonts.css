@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "ForsikringGrotesk";
+    src: url("fonts/ForsikringGrotesk-Bold-Web.woff2") format('woff2'),
+         url("fonts/ForsikringGrotesk-Bold-Web.woff") format('woff');
+         font-weight: bold;
+}
+
+@font-face {
+    font-family: "ForsikringGrotesk";
+    src: url("fonts/ForsikringGrotesk-BoldItalic-Web.woff2") format('woff2'),
+         url("fonts/ForsikringGrotesk-BoldItalic-Web.woff") format('woff');
+         font-weight: bold;
+         font-style: italic;
+}
+
+@font-face {
+    font-family: "ForsikringGrotesk";
+    src: url("fonts/ForsikringGrotesk-Italic-Web.woff2") format('woff2'),
+         url("fonts/ForsikringGrotesk-Italic-Web.woff") format('woff');
+         font-style: italic;
+}
+
+@font-face {
+    font-family: "ForsikringGrotesk";
+    src: url("fonts/ForsikringGrotesk-Display-Web.woff2") format('woff2'),
+         url("fonts/ForsikringGrotesk-Display-Web.woff") format('woff');
+}
+
+@font-face {
+    font-family: "ForsikringGrotesk";
+    src: url("fonts/ForsikringGrotesk-Regular-Web.woff2") format('woff2'),
+         url("fonts/ForsikringGrotesk-Regular-Web.woff") format('woff');
+         font-weight: bold;
+}
+
+@font-face {
+    font-family: "ForsikringGrotesk";
+    src: url("fonts/ForsikringGroteskMono-Regular-Web.woff2") format('woff2'),
+         url("fonts/ForsikringGroteskMono-Regular-Web.woff") format('woff');
+         font-weight: bold;
+}
