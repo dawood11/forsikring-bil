@@ -22,14 +22,8 @@ const rules = {
 };
 
 function validate(element) {
-
     const value = document.getElementById(element.id).value;
     const patterMatch = rules[element.id].pattern.test(value);
-    
-    const br = element.nextSibling;
-    if (br.tagName === "BR") {
-        br.remove();
-    }
     
     const oldErrorMessage = document.getElementById("error-" + element.id);
     if (oldErrorMessage) {
@@ -41,7 +35,6 @@ function validate(element) {
         errorMessage.setAttribute("class", "error-text");
         errorMessage.setAttribute("id", "error-" + element.id);
         element.parentNode.insertBefore(errorMessage, element.nextSibling);
-        element.parentNode.insertBefore(document.createElement("br"), element.nextSibling);
 
         return false;
     }
