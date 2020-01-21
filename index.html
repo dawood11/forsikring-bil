@@ -12,34 +12,40 @@
 		<p>Det er fire forskjellige forsikringer å velge mellom. Ansvarsforsikring er lovpålagt om kjøretøyet er registrert og skal brukes på veien. I tillegg kan du utvide forsikringen avhengig av hvor gammel bilen din er og hvordan du bruker den.</p>
 
 		<form>
-			<label>Bilens registreringsnummer</label>
-			<input type="text" id="regNr" placeholder="e.g. AB 12345" minlength="6" maxlength="7" onblur="validate(this)">
+			<label name="regNr">Bilens registreringsnummer
+				<input type="text" id="regNr" placeholder="e.g. AB 12345" minlength="6" maxlength="7" onblur="validate(this)">
+			</label>
 
-			<label>Din bonus</label>
-			<select id="bonus" id="bonus" required>
-				<option value="25%">25%</option>
-				<option value="50%">50%</option>
-				<option value="75%">75%</option>
-			  </select>
-			<span class="help-text">Hjelpetekst står her</span>
+			<label name="bonus">Din bonus
+				<select id="bonus" required>
+					<option value="25%">25%</option>
+					<option value="50%">50%</option>
+					<option value="75%">75%</option>
+				</select>
+				<span class="help-text">Hjelpetekst står her</span>
+			</label>
 
-			<label>Fødselsnummer</label>
-			<input type="number" id="fNr" placeholder="11 siffer" minlength="11" maxlength="11" onblur="validate(this)">
+			<label name="fNr">Fødselsnummer
+				<input type="number" id="fNr" placeholder="11 siffer" minlength="11" maxlength="11" onblur="validate(this)">
+			</label>
 
 			
 			<div class="row">
 				<div class="column">
-					<label>Fornavn</label>
-					<input type="text" id="fornavn" placeholder="Placeholder" minlength="2" onblur="validate(this)">
+					<label name="fornavn">Fornavn
+						<input type="text" id="fornavn" placeholder="Placeholder" minlength="2" onblur="validate(this)">
+					</label>
 				</div>
 				<div class="column">
-					<label>Etternavn</label>
-					<input type="text" id="etternavn" placeholder="Placeholder" minlength="2" onblur="validate(this)">
+					<label name="etternavn">Etternavn
+						<input type="text" id="etternavn" placeholder="Placeholder" minlength="2" onblur="validate(this)">
+					</label>
 				</div>
 			</div>
 
-			<label>Epost</label>
-			<input type="email" id="epost" placeholder="Placeholder" minlength="6" onblur="validate(this)">
+			<label name="epost">Epost
+				<input type="email" id="epost" placeholder="Placeholder" minlength="6" onblur="validate(this)">
+			</label>
 
 			<button type="submit" class="submit-btn" value="Beregn pris">Beregn pris</button>
 			<button type="cancel" >Avbryt</button>

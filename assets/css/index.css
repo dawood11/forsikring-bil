@@ -2,9 +2,24 @@ body {
     font-family: ForsikringGrotesk;
     padding: 0% 10%;
 }
+h1 {
+    padding: 96px 0px 48px;
+}
 
-label, span.help-text, span.error-text {
+span.help-text, span.error-text {
     margin: 5px 0px 0px;
+}
+
+label[name="bonus"],
+label[name="fornavn"],
+label[name="etternavn"],
+label[name="epost"] {
+    margin-top: 36px;
+}
+
+label[name="regNr"],
+label[name="fNr"] {
+    margin-top: 48px;
 }
 
 input[type=text],
@@ -13,7 +28,15 @@ input[type=email],
 select {
     border: none;
     border-bottom: 1px solid lightgrey;
-    padding: 5px 0px;
+    padding: 10px 0px;
+}
+
+label, span, input[type=text],
+input[type=number],
+input[type=email],
+select {
+    display: block;
+    position: relative;
 }
 
 input[type=text]:focus,
@@ -40,7 +63,7 @@ button {
     border: 1px solid dimgray;
     color: dimgray;
     padding: 5px 10px;
-    margin: 15px 5px 0px 0px;
+    margin: 120px 5px 0px 0px;
 }
 
 button:hover {
@@ -80,6 +103,19 @@ span.error-text {
     body {
         padding: 0% 0%;
     }
+
+    label[name="bonus"],
+    label[name="fornavn"],
+    label[name="etternavn"],
+    label[name="epost"] {
+        margin-top: 72px;
+    }
+    
+    label[name="regNr"],
+    label[name="fNr"] {
+        margin-top: 96px;
+    }
+
     div.row, div.column {
         display: inline-block;
         flex-direction: row;
@@ -94,17 +130,12 @@ span.error-text {
     }
 
     button {
-        border-radius: 12px;
         border: 1px solid black;
         color: black;
-        padding: 5px 10px;
-        margin: 15px 5px 0px 0px;
         background-color: white;
     }
     
     button.submit-btn {
-        border: 1px solid black;
-        background-color: black;
         color: white;
     }
 }
